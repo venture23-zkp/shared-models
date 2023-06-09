@@ -16,7 +16,6 @@ export enum NetworkName {
   EthereumGoerli = 'Ethereum_Goerli',
   PolygonMumbai = 'Polygon_Mumbai',
   ArbitrumGoerli = 'Arbitrum_Goerli',
-  CeloAlfajores = 'Celo_Alfajores',
 
   // Dev only
   Hardhat = 'Hardhat',
@@ -63,7 +62,6 @@ export enum RailgunProxyContract {
   EthereumGoerli = '0xe8bEa99BB438C2f3D533604D33258d74d5eE4824',
   PolygonMumbai = '0x7130B44604AB7818B1b92f44fEe92Ae337684BB8',
   ArbitrumGoerli = '0xA0603e598F9Ac2fc7475a3fA08D0794066615D9a',
-  CeloAlfajores = '0x328f9E1B522CeEeC8359743De56a025a31F1FE31',
   Hardhat = '0x610178dA211FEF7D417bC0e6FeD39F05609AD788',
 }
 
@@ -78,7 +76,6 @@ export enum RelayAdaptContract {
   EthereumGoerli = '0x14a57CA7C5c1AD54fB6c642f428d973fcD696ED4',
   PolygonMumbai = '0x10Ed093D7dd57089EA57ef14A7Aab6EEc0a2D602',
   ArbitrumGoerli = '0x3eAf99B5EDc79D833AA8B6d18F0a8dd041e13eF6',
-  CeloAlfajores = '0xe6302B17490402a1E7a526366ffEaC99fC1d67Bf',
   Hardhat = '0x0355B7B8cb128fA5692729Ab3AAa199C1753f726',
 }
 
@@ -93,7 +90,6 @@ export enum RailgunProxyDeploymentBlock {
   EthereumGoerli = 7795991,
   PolygonMumbai = 36309861,
   ArbitrumGoerli = 2611949,
-  CeloAlfajores = 17754622,
   Hardhat = 0,
 }
 
@@ -108,7 +104,6 @@ export enum BaseTokenWrappedAddress {
   EthereumGoerliWETH = '0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6', // (Goerli) WETH
   PolygonMumbaiWMATIC = '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889', // (Mumbai) WMATIC
   ArbitrumGoerliWETH = '0xe39Ab88f8A4777030A534146A9Ca3B52bd5D43A3', // (Arbitrum Goerli) WETH
-  CeloAlfajoresWETH = '0x524d97A67f50F4A062C28c74F60703Aec9028a94', // (Celo Alfajores) WCELO
   HardhatWETH = '0x09635F643e140090A9A8Dcd712eD6285858ceBef', // (Hardhat) WETH
 }
 
@@ -303,29 +298,6 @@ export const NETWORK_CONFIG: { [name in NetworkName]: Network } = {
     proxyContract: RailgunProxyContract.ArbitrumGoerli,
     relayAdaptContract: RelayAdaptContract.ArbitrumGoerli,
     deploymentBlock: RailgunProxyDeploymentBlock.ArbitrumGoerli,
-    isDevOnlyNetwork: true,
-    isTestnet: true,
-    defaultEVMGasType: EVMGasType.Type2,
-    shouldQuickSync: true,
-  },
-  [NetworkName.CeloAlfajores]: {
-    chain: {
-      type: ChainType.EVM,
-      id: 44787,
-    },
-    name: NetworkName.CeloAlfajores,
-    publicName: 'Celo Alfajores Testnet',
-    shortPublicName: 'Celo Alfajores',
-    coingeckoId: 'celo',
-    baseToken: {
-      symbol: 'CELO',
-      wrappedSymbol: 'WCELO',
-      wrappedAddress: BaseTokenWrappedAddress.CeloAlfajoresWETH,
-      decimals: 18,
-    },
-    proxyContract: RailgunProxyContract.CeloAlfajores,
-    relayAdaptContract: RelayAdaptContract.CeloAlfajores,
-    deploymentBlock: RailgunProxyDeploymentBlock.CeloAlfajores,
     isDevOnlyNetwork: true,
     isTestnet: true,
     defaultEVMGasType: EVMGasType.Type2,
