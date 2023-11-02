@@ -64,7 +64,7 @@ export type Network = {
 export const RailgunProxyContract: Record<NetworkName, string> = {
   [NetworkName.Railgun]: '',
 
-  [NetworkName.Ethereum]: '0xfa7093cdd9ee6932b4eb2c9e1cde7ce00b1fa4b9',
+  [NetworkName.Ethereum]: '0x8B64968F69E669faCc86FA3484FD946f1bBE7c91',
   [NetworkName.BNBChain]: '0x590162bf4b50f6576a459b75309ee21d92178a10',
   [NetworkName.Polygon]: '0x19b620929f97b7b990801496c3b361ca5def8c71',
   [NetworkName.Arbitrum]: '0xFA7093CDD9EE6932B4eb2c9e1cde7CE00B1FA4b9',
@@ -81,7 +81,7 @@ export const RailgunProxyContract: Record<NetworkName, string> = {
 export const RelayAdaptContract: Record<NetworkName, string> = {
   [NetworkName.Railgun]: '',
 
-  [NetworkName.Ethereum]: '0x4025ee6512DBbda97049Bcf5AA5D38C54aF6bE8a',
+  [NetworkName.Ethereum]: '0x4Dd5336F3C0D70893A7a86c6aEBe9B953E87c891',
   [NetworkName.BNBChain]: '0x741936fb83DDf324636D3048b3E6bC800B8D9e12',
   [NetworkName.Polygon]: '0xc7FfA542736321A3dd69246d73987566a5486968',
   [NetworkName.Arbitrum]: '0x5aD95C537b002770a39dea342c4bb2b68B1497aA',
